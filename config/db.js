@@ -3,8 +3,8 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 let db
-const mongodbUrl = process.env.MONGODB_ATLAS_URI
-const dbName = process.env.ATLAS_DB_NAME
+const mongodbUrl = process.env.MONGODB_URI
+const dbName = process.env.DB_NAME
 
 const mongoClient = new MongoClient(mongodbUrl)
 
